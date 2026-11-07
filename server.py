@@ -158,6 +158,7 @@ GEMINI_NEPALI_RENDER_SCHEMA = {
 PHRASE_FIXES = [
     (re.compile(r"\bCaregivers Training\b", re.I), "Caregiver Training"),
     (re.compile(r"\bCTV[TB]\b", re.I), "CTEVT"),
+    (re.compile(r"(दाजुभाइ|दाजुभाई)(बीचको|बिचको)"), r"\1 \2"),
     (re.compile(r"आजे"), "आजै"),
     (re.compile(r"साते"), "साथै"),
     (re.compile(r"योटक"), "एउटा"),
